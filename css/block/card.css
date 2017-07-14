@@ -1,3 +1,62 @@
+
+.card {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 16px;
+	width: 25%;
+	position: relative;
+
+}
+
+.wrap-card-options {
+	position: absolute;
+	top: -16px;
+	left: 0;
+	opacity: 0;
+
+	transition: opacity 0.2s linear;
+}
+
+.card:hover .wrap-card-options {
+	opacity: 1;
+}
+
+.card-options {
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 32px;
+	height: 32px;
+	text-indent: -9990px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+.card-options.isActive {
+	border-width: 4px;
+}
+
+.card_delete {
+
+	background-image: url(../../images/delete.png);
+	background-size: 60%;
+	margin-right: 15px;
+
+}
+
+.card_edit {
+	background-image: url(../../images/edit.png);
+	background-size: 60%;
+}
+
+.card-content[contenteditable="true"] {
+	outline: 2px dashed rgba(0, 0, 0, 0.5);
+}
+
 [data-color="first"] {
 	background-color: #45AAEE; /* Azul */
 }
@@ -15,32 +74,3 @@
 }
 
 
-.card {
-	display: inline-block;
-	box-sizing: border-box;
-	padding: 16px;
-	width: 25%;
-	position: relative;
-
-}
-
-.wrap-card-colors {
-	position: absolute;
-	top: -16px;
-	left: 0;
-}
-
-.card-colors {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 32px;
-	height: 32px;
-	text-indent: -9990px;
-	overflow: hidden;
-	border-radius: 50%;
-	border: 1px solid rgba(0,0,0,0.5);
-}
-
-.card-colors.isActive {
-	border-width: 4px;
-}

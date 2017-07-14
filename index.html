@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Ceep</title>
 
-	<link rel="stylesheet" href="css/block/header.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/block/header.css">
+	<link rel="stylesheet" href="css/block/newCard.css">
 	<link rel="stylesheet" href="css/block/card.css">
+
 
 </head>
 <body>
@@ -28,96 +30,136 @@
 	</header>
 
 
+	<form action="" class="newCard">
+		<textarea class="newCard-content" placeholder="Digite o conteudo do seu cartao" name="" id="" cols="30" rows="10"></textarea>
+		<input class="newCard-action" type="submit" value="Salvar">
+	</form>
+
+
 	<section class="container">
 		<ol>
 			<li class="card" data-color="first">
-				<nav class="wrap-card-colors">
+				<nav class="wrap-card-options">
 					<ul>
-						<li class="card-colors isActive" data-color="first" >
+
+						<li class="card-options card_delete">
+							<a href="">Excluir</a>
+						</li>
+
+						<li class="card-options card_edit">
+							<a href="">Editar</a>
+						</li>
+
+						<li class="card-options isActive" data-color="first" >
 							<a href="">Azul</a>
 						</li>
-						<li class="card-colors" data-color="second">
+						<li class="card-options" data-color="second">
 							<a href="">Vermelhor</a>
 						</li>
-						<li class="card-colors" data-color="third">
+						<li class="card-options" data-color="third">
 							<a href="">Verde</a>
 						</li>
-						<li class="card-colors" data-color="fourth">
+						<li class="card-options" data-color="fourth">
 							<a href="">Amarelo</a>
 						</li>
 					</ul>
 				</nav>
 
-				<p>
+				<p class="card-content" contenteditable="false">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eos impedit ut magnam itaque! Consequatur mollitia fugit molestiae aspernatur, impedit autem, doloremque alias sit necessitatibus perspiciatis suscipit voluptas dicta harum quia qui ipsa, commodi accusamus dolores fuga quidem? Nobis, id.
 				</p>
 			</li><!--
 
 		 --><li class="card" data-color="second">
-		 		<nav class="wrap-card-colors">
+		 		<nav class="wrap-card-options">
 		 			<ul>
-		 				<li class="card-colors" data-color="first" >
+
+		 				<li class="card-options card_delete">
+							<a href="">Excluir</a>
+						</li>
+
+						<li class="card-options card_edit">
+							<a href="">Editar</a>
+						</li>
+
+		 				<li class="card-options" data-color="first" >
 							<a href="">Azul</a>
 						</li>
-						<li class="card-colors isActive" data-color="second">
+						<li class="card-options isActive" data-color="second">
 							<a href="">Vermelhor</a>
 						</li>
-						<li class="card-colors" data-color="third">
+						<li class="card-options" data-color="third">
 							<a href="">Verde</a>
 						</li>
-						<li class="card-colors" data-color="fourth">
+						<li class="card-options" data-color="fourth">
 							<a href="">Amarelo</a>
 						</li>
 		 			</ul>
 		 		</nav>
 
-		 		<p>
+		 		<p class="card-content" contenteditable="false">`
 		 			Aliquid commodi sequi, rerum deserunt, molestiae nisi quaerat veniam beatae id voluptatum qui vitae dolore dolor tempora. Dicta saepe quae iusto vero in minima inventore veritatis, beatae velit, amet, voluptate enim atque expedita nostrum eius tenetur doloribus nulla natus cumque.
 		 		</p>
 		 	</li><!--
 
 		 --><li class="card" data-color="third">
-		 		<nav class="wrap-card-colors">
+		 		<nav class="wrap-card-options">
 		 			<ul>
-		 				<li class="card-colors" data-color="first" >
+		 				<li class="card-options card_delete">
+							<a href="">Excluir</a>
+						</li>
+
+						<li class="card-options card_edit">
+							<a href="">Editar</a>
+						</li>
+
+		 				<li class="card-options" data-color="first" >
 							<a href="">Azul</a>
 						</li>
-						<li class="card-colors" data-color="second">
+						<li class="card-options" data-color="second">
 							<a href="">Vermelhor</a>
 						</li>
-						<li class="card-colors isActive" data-color="third">
+						<li class="card-options isActive" data-color="third">
 							<a href="">Verde</a>
 						</li>
-						<li class="card-colors" data-color="fourth">
+						<li class="card-options" data-color="fourth">
 							<a href="">Amarelo</a>
 						</li>
 		 			</ul>
 		 		</nav>
 
-		 		<p>
+		 		<p class="card-content" contenteditable="false">
 		 			Cumque voluptatum consequatur ratione sed officiis dolor deleniti odit inventore totam, hic dicta quae, voluptatem ipsum, facere iure reiciendis voluptate doloremque nihil porro doloribus accusantium odio quos. Minima iste fuga earum enim error voluptate quidem rerum maiores necessitatibus? Eligendi, architecto.
 		 		</p>	
 		 	</li><!--
 
 		 --><li class="card" data-color="fourth">
-		 		<nav class="wrap-card-colors">
+		 		<nav class="wrap-card-options">
 		 			<ul>
-		 				<li class="card-colors" data-color="first" >
+		 				<li class="card-options card_delete">
+							<a href="">Excluir</a>
+						</li>
+
+						<li class="card-options card_edit">
+							<a href="">Editar</a>
+						</li>
+
+		 				<li class="card-options" data-color="first" >
 							<a href="">Azul</a>
 						</li>
-						<li class="card-colors" data-color="second">
+						<li class="card-options" data-color="second">
 							<a href="">Vermelhor</a>
 						</li>
-						<li class="card-colors" data-color="third">
+						<li class="card-options" data-color="third">
 							<a href="">Verde</a>
 						</li>
-						<li class="card-colors isActive" data-color="fourth">
+						<li class="card-options isActive" data-color="fourth">
 							<a href="">Amarelo</a>
 						</li>
 		 			</ul>
 		 		</nav>
 
-		 		<p>
+		 		<p class="card-content" contenteditable="false">
 		 			Aliquid incidunt eveniet, voluptate cupiditate ex, placeat aperiam consequatur, reiciendis laborum iste nemo minima eaque sed nisi necessitatibus odit pariatur ut voluptatum nostrum ipsum nihil adipisci. Placeat cupiditate alias quidem delectus itaque soluta animi, vitae natus aperiam cumque, optio hic!
 		 		</p>	
 		 	</li>
@@ -126,6 +168,7 @@
 
 
 <script type="text/javascript" src="javascript/block/card.js"></script>
+<script type="text/javascript" src="javascript/block/newCard.js"></script>
 
 </body>
 </html>
